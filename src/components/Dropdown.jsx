@@ -10,7 +10,7 @@ export default function Dropdown({
 }) {
   return (
     <Menu>
-      <MenuButton className="bg-transparent p-2 w-44 border-b border-black flex justify-between items-center">
+      <MenuButton className="bg-transparent p-2 w-44 border-b border-[#121212] flex justify-between items-center">
         <p className="font-semibold">{title}</p>
         <FaChevronDown />
       </MenuButton>
@@ -19,17 +19,17 @@ export default function Dropdown({
         className="border rounded-xl w-64 p-4 mt-3 flex flex-col gap-y-2 bg-white"
       >
         <MenuItem>
-          <a className="block data-[focus]:border-2  border-2 border-transparent data-[focus]:border-black p-4 rounded-xl font-semibold cursor-pointer">
+          <a className="block data-[focus]:border-2  border-2 border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">
             {productOne}
           </a>
         </MenuItem>
         <MenuItem>
-          <a className="block data-[focus]:border-2  border-2  border-transparent data-[focus]:border-black p-4 rounded-xl font-semibold cursor-pointer">
+          <a className="block data-[focus]:border-2  border-2  border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">
             {productTwo}
           </a>
         </MenuItem>
         <MenuItem>
-          <a className="block data-[focus]:border-2 border-2 border-transparent data-[focus]:border-black p-4 rounded-xl font-semibold cursor-pointer">
+          <a className="block data-[focus]:border-2 border-2 border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">
             {productThree}
           </a>
         </MenuItem>

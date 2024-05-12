@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
       <div className="flex relative justify-center items-center">
         <img src={Logo} alt="" className="w-32" />
-        <p className="text-5xl font-black absolute left-2 top-1 text-white">
+        <p className="text-5xl font-black absolute left-2 top-1 text-[#fff]">
           AIR
         </p>
       </div>
@@ -38,15 +38,15 @@ export default function Navbar() {
         <input
           type="text"
           placeholder="Ara..."
-          className="w-[300px] h-22 border-2 border-black pl-12 pr-4 py-2 rounded-md "
+          className="w-[300px] h-22 border-2 border-[#121212] pl-12 pr-4 py-2 rounded-md "
         />
         <IoIosSearch className="left-3 top-2 h-7 w-7 absolute" />
       </div>
       <div className="flex gap-x-6 items-center ml-3">
-        <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full">
+        <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
           <FaRegHeart size={25} />
         </div>
-        <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full">
+        <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
           <IoBasketOutline size={25} />
         </div>
       </div>
