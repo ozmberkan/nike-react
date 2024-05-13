@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Products() {
   var settings = {
-    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -19,7 +18,7 @@ export default function Products() {
     cssEase: "linear",
   };
   return (
-    <div className="max-w-[1700px] h-[600px]  mt-36 mx-auto ">
+    <div className="max-w-[1700px] h-[600px]  mt-24 mx-auto  ">
       <Slider
         {...settings}
         className="max-w-full h-full flex justify-center items-center"

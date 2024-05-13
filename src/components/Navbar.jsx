@@ -10,9 +10,6 @@ export default function Navbar() {
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
       <div className="flex relative justify-center items-center">
         <img src={Logo} alt="" className="w-32" />
-        <p className="text-5xl font-black absolute left-2 top-1 text-[#fff]">
-          AIR
-        </p>
       </div>
       <div className="flex gap-x-5 ml-12">
         <Dropdown
