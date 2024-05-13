@@ -9,7 +9,7 @@ export default function History() {
           <img
             src={histroyShoe}
             alt=""
-            className="rotate-[45deg] scale-150 ml-12"
+            className="rotate-[45deg] scale-150 ml-12 drop-shadow-2xl"
           />
         </div>
         <div className="w-[60%]  h-full p-12 flex flex-col gap-y-5">
