@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
 import History from "../components/History";
+import Categories from "../components/Categories";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <History />
       <Products />
+      <Categories />
       <Footer />
     </div>
   );
