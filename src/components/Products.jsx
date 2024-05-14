@@ -19,7 +19,8 @@ export default function Products() {
     cssEase: "linear",
   };
   return (
-    <div className="max-w-[1700px] h-[550px]  mb-6 mx-auto  ">
+    <div className="max-w-[1700px] h-[550px] mb-6 mx-auto  ">
+      <h1 className="text-center text-4xl font-black mb-5 ">Çok satanlar</h1>
       <Slider
         {...settings}
         className="max-w-full h-full flex justify-center items-center"

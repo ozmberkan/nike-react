@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
       <div className="flex relative justify-center items-center">
-        <img src={Logo} alt="" className="w-32" />
+        <img src={Logo} alt="" className="w-32 cursor-pointer" />
       </div>
       <div className="flex gap-x-5 ml-12">
         <Dropdown

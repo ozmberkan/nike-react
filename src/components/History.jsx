@@ -3,7 +3,7 @@ import histroyShoe from "../assets/Historyshoe.png";
 
 export default function History() {
   return (
-    <div className="w-full h-[800px]  mt-36 p-28">
+    <div className="w-full h-[800px] mt-36 p-28">
       <div className="w-4/5 flex justify-center items-start mx-auto h-full  rounded-xl shadow-lg  bg-[url('./assets/bannerofhistory.svg')] bg-cover ">
         <div className="w-[40%]">
           <img
