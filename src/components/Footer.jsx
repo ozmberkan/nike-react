@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className=" w-[380px] p-7 ">
-        <h1 className="font-semibold">AirForce'ı Keşfet</h1>
+        <h1 className="font-semibold">Sosyal Medya</h1>
         <div className="flex flex-col gap-y-5 mt-12">
           <span className="flex items-center gap-x-2 cursor-pointer"><FaInstagram /> Instagram</span>
           <span className="flex items-center gap-x-2 cursor-pointer"><FaXTwitter /> Twitter</span>
