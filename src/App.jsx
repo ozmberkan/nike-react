@@ -13,7 +13,7 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
+    axios.get('src/db.json')
       .then((response) => {
         setData(response.data);
       })
