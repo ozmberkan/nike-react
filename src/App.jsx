@@ -13,7 +13,7 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('/src/db.json')
+    axios.get('/dist/db.json')
       .then((response) => {
         setData(response.data);
       })
