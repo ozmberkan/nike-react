@@ -11,7 +11,7 @@ export default function Home({ data, shoes }) {
 
   return (
     <div>
-      <Header />
+      <Header shoes={shoes} />
       <History />
       <Products data={data} shoes={shoes} />
       <Application />
