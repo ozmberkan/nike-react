@@ -2,22 +2,22 @@ const shoes = {
   airforcerainbow: {
     id: 1,
     name: "AirForce Rainbow",
-    image: "dist/assets/bannerofhistory-C5au-8vt.svg",
+    image: "src/assets/Rainbow.png",
   },
   airforceone: {
     id: 2,
     name: "AirForce One",
-    image: "dist/assets/Historyshoe-B4NE58KA.png",
+    image: "src/assets/ForceOne.png",
   },
   airforceblue: {
     id: 3,
     name: "AirForce Blue",
-    image: "dist/assets/Shoes-CWD2kgmM.png",
+    image: "src/assets/Blue.png",
   },
   airforcecherry: {
     id: 4,
     name: "AirForce Cherry",
-    image: "dist/assets/huawei-mtxjhYyn.svg",
+    image: "src/assets/Cherry.png",
   },
 };
 
