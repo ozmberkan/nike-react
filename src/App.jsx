@@ -13,18 +13,7 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products', {
-      method: "POST",
-      body: JSON.stringify(
-        {
-          title: 'test product',
-          price: 13.5,
-          description: 'lorem ipsum set',
-          image: '/dist/Shoes-CWD2kgmM.png',
-          category: 'electronic'
-        }
-      )
-    })
+    axios.get('/dist/db.json')
       .then((response) => {
         setData(response.data);
       })
