@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/Svg/Logo.svg";
 import Dropdown from "./Dropdown";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";

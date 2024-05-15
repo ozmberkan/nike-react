@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from '../assets/Logo.svg'
-import appStore from '../assets/appstore.svg'
-import googlePlay from '../assets/googleplay.svg'
-import huaweiApp from '../assets/huawei.svg'
+import Logo from '../assets/Svg/Logo.svg'
+import appStore from '../assets/SocialMedia/appstore.svg'
+import googlePlay from '../assets/SocialMedia/googleplay.svg'
+import huaweiApp from '../assets/SocialMedia/huawei.svg'
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 

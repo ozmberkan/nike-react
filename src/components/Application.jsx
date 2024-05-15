@@ -1,13 +1,13 @@
 import React from 'react'
-import appPhoto from '../assets/phoneLanding.png'
-import appStore from '../assets/appstore.svg'
-import googlePlay from '../assets/googleplay.svg'
-import huaweiApp from '../assets/huawei.svg'
+import appPhoto from '../assets/Banners/phoneLanding.png'
+import appStore from '../assets/SocialMedia/appstore.svg'
+import googlePlay from '../assets/SocialMedia/googleplay.svg'
+import huaweiApp from '../assets/SocialMedia/huawei.svg'
 
 export default function Application() {
     return (
         <div className='w-2/3 mx-auto h-[600px] mt-28 p-12'>
-            <div className='w-full h-full border shadow-xl  border-opacity-50 bg-[url("./assets/appBanner.svg")] bg-cover  rounded-xl px-6 flex  relative'>
+            <div className='w-full h-full border shadow-xl  border-opacity-50 bg-[url("./assets/Svg/appBanner.svg")] bg-cover  rounded-xl px-6 flex  relative'>
                 <div className='w-[40%] flex justify-center'>
                     <img src={appPhoto} alt="" className='w-[300px] ml-auto absolute bottom-0 drop-shadow-2xl ' />
                 </div>
