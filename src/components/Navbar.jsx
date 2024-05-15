@@ -4,12 +4,16 @@ import Dropdown from "./Dropdown";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { IoBasketOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+
+export default function Navbar({ data }) {
   return (
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
       <div className="flex relative justify-center items-center">
-        <img src={Logo} alt="" className="w-32 cursor-pointer" />
+        <Link to="/">
+          <img src={Logo} alt="" className="w-32 cursor-pointer" />
+        </Link>
       </div>
       <div className="flex gap-x-5 ml-12">
         <Dropdown
@@ -20,12 +24,16 @@ export default function Navbar() {
         />
         <Dropdown
           title="Erkek"
+          bestsellers="/bestsellers"
+          Allproducts="/allproducts"
           productOne="En çok satanlar"
           productTwo="Günlük Giyim"
           productThree="Tüm Airforce'lar"
         />
         <Dropdown
           title="Kadın"
+          bestsellers="/bestsellers"
+          Allproducts="/allproducts"
           productOne="En çok satanlar"
           productTwo="Günlük Giyim"
           productThree="Tüm Airforce'lar"

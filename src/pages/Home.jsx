@@ -1,18 +1,19 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
 import History from "../components/History";
 import Application from "../components/Application";
 
-export default function Home() {
+export default function Home({ data }) {
+
+
+
   return (
     <div>
-      <Navbar />
       <Header />
       <History />
-      <Products />
+      <Products data={data} />
       <Application />
       <Footer />
     </div>
