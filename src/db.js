@@ -2,7 +2,7 @@ const shoes = {
   airforcerainbow: {
     id: 1,
     name: "AirForce Rainbow",
-    image: "/assets/bannerofhistory-C5au-8vt.svg",
+    image: "/dist/assets/bannerofhistory-C5au-8vt.svg",
   },
   airforceone: {
     id: 2,
