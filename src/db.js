@@ -17,7 +17,7 @@ const shoes = {
   airforcecherry: {
     id: 4,
     name: "AirForce Cherry",
-    image: "dist/assets/phoneLanding-DWbFzzCK.png",
+    image: "/dist/assets/phoneLanding-DWbFzzCK.png",
   },
 };
 
