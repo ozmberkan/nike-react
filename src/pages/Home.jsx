@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import History from "../components/History";
 import Application from "../components/Application";
 
-export default function Home({ data }) {
+export default function Home({ data, shoes }) {
 
 
 
@@ -13,7 +13,7 @@ export default function Home({ data }) {
     <div>
       <Header />
       <History />
-      <Products data={data} />
+      <Products data={data} shoes={shoes} />
       <Application />
       <Footer />
     </div>
