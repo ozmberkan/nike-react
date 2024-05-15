@@ -12,12 +12,12 @@ const shoes = {
   airforceblue: {
     id: 3,
     name: "AirForce Blue",
-    image: "/assets/shoe3.png",
+    image: "/assets/huawei-mtxjhYyn.svg",
   },
   airforcecherry: {
     id: 4,
     name: "AirForce Cherry",
-    image: "/assets/shoe4.png",
+    image: "dist/assets/huawei-mtxjhYyn.svg",
   },
 };
 
