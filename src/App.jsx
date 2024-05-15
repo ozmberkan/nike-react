@@ -13,7 +13,7 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('/dist/db.json')
+    axios.get('https://justairforce.vercel.app/dist/db.json')
       .then((response) => {
         setData(response.data);
       })
