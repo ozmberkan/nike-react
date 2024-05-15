@@ -16,6 +16,8 @@ export default function App() {
     axios.get('/src/data.json').then((data) => setData(data.data))
   }, [])
 
+  console.log(data);
+
   return (
     <Router>
       <Navbar />
