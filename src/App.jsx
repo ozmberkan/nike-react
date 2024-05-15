@@ -18,6 +18,8 @@ export default function App() {
       .then((response) => {
         setData(response.data);
       })
+
+    console.log(data);
   }, [])
 
 
