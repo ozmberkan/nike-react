@@ -23,7 +23,7 @@ const shoes = {
   },
   banners: {
     id: 5,
-    image: "/build/assets/Banners/Shoes.png",
+    image: "/public/photo.jpeg",
   },
 };
 
