@@ -13,10 +13,14 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('/dist/data/data.json').then((data) => setData(data.data))
+    axios.get('https://fakestoreapi.com/products')
+      .then((response) => {
+        setData(response.data);
+      })
   }, [])
 
   console.log(data);
+  console.log('değişti');
 
   return (
     <Router>
