@@ -13,14 +13,12 @@ export default function App() {
 
 
   useEffect(() => {
-    axios.get('src/db.json')
+    axios.get('/src/db.json')
       .then((response) => {
         setData(response.data);
       })
   }, [])
 
-  console.log(data);
-  console.log('değişti');
 
   return (
     <Router>
