@@ -2,10 +2,9 @@ import React from "react";
 import Logo from "../assets/Svg/Logo.svg";
 import Dropdown from "./Dropdown";
 import { IoIosSearch } from "react-icons/io";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaRegBell } from "react-icons/fa";
 import { IoBasketOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-
 
 export default function Navbar({ data }) {
   return (
@@ -48,6 +47,12 @@ export default function Navbar({ data }) {
         <IoIosSearch className="left-3 top-2 h-7 w-7 absolute" />
       </div>
       <div className="flex gap-x-6 items-center ml-3">
+        <Link
+          to="/updates"
+          className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full "
+        >
+          <FaRegBell size={25} />
+        </Link>
         <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
           <FaRegHeart size={25} />
         </div>

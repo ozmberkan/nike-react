@@ -6,9 +6,6 @@ import History from "../components/History";
 import Application from "../components/Application";
 
 export default function Home({ data, shoes }) {
-
-
-
   return (
     <div>
       <Header shoes={shoes} />
