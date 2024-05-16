@@ -6,7 +6,7 @@ export default function Products({ shoes }) {
   function NextArrow({ className, onClick }) {
     return (
       <div
-        className={`${className} text-black bg-zinc-100 -right-16 w-10 h-10 flex justify-center  items-center rounded-full  hover:bg-gray-600 hover:text-white`}
+        className={`${className} text-black bg-zinc-100 -right-16 w-10 h-10 flex justify-center  items-center rounded-full  hover:bg-gray-600 transition-colors duration-500 hover:text-white`}
         onClick={onClick}
       >
         <IoIosArrowForward size={30} />
@@ -16,7 +16,7 @@ export default function Products({ shoes }) {
   function BackArrow({ className, onClick }) {
     return (
       <div
-        className={`${className} text-black bg-zinc-100 -left-16 w-10 h-10 flex justify-center items-center rounded-full  hover:bg-gray-600 hover:text-white`}
+        className={`${className} text-black bg-zinc-100 -left-16 w-10 h-10 flex justify-center items-center rounded-full  hover:bg-gray-600 transition-colors duration-500 hover:text-white`}
         onClick={onClick}
       >
         <IoIosArrowBack size={30} />
