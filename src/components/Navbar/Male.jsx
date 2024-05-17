@@ -9,7 +9,8 @@ export default function Dropdown({
   productTwo,
   productThree,
   bestsellers,
-  Allproducts
+  Allproducts,
+  daily
 }) {
   return (
     <Menu>
@@ -27,9 +28,9 @@ export default function Dropdown({
           </Link>
         </MenuItem>
         <MenuItem>
-          <a className="block data-[focus]:border-2  border-2  border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">
+          <Link to={daily} className="block data-[focus]:border-2  border-2  border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">
             {productTwo}
-          </a>
+          </Link>
         </MenuItem>
         <MenuItem>
           <Link to={Allproducts} className="block data-[focus]:border-2 border-2 border-transparent data-[focus]:border-[#121212] p-4 rounded-xl font-semibold cursor-pointer">

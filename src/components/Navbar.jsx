@@ -1,12 +1,14 @@
 import React from "react";
 import Logo from "../assets/Svg/Logo.svg";
-import Dropdown from "./Dropdown";
+import Male from "./Navbar/Male";
+import Female from "./Navbar/Female";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart, FaRegBell } from "react-icons/fa";
 import { IoBasketOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import NewProducts from "./Navbar/NewProducts";
 
-export default function Navbar({ data }) {
+export default function Navbar() {
   return (
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
       <div className="flex relative justify-center items-center">
@@ -15,23 +17,28 @@ export default function Navbar({ data }) {
         </Link>
       </div>
       <div className="flex gap-x-5 ml-12">
-        <Dropdown
+        <NewProducts
           title="Yeni Airforce'lar"
           productOne="Airforce One"
           productTwo="Airforce Rainbow"
           productThree="Airforce Cherry"
+          airforceone="/airforceone"
+          airforcerainbow="/airforcerainbow"
+          airforcecherry="/airforcecherry"
         />
-        <Dropdown
+        <Male
           title="Erkek"
           bestsellers="/bestsellers"
           Allproducts="/allproducts"
+          daily="/daily"
           productOne="En çok satanlar"
           productTwo="Günlük Giyim"
           productThree="Tüm Airforce'lar"
         />
-        <Dropdown
+        <Female
           title="Kadın"
           bestsellers="/bestsellers"
+          daily="/daily"
           Allproducts="/allproducts"
           productOne="En çok satanlar"
           productTwo="Günlük Giyim"
