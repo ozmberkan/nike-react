@@ -2,9 +2,10 @@ import React from "react";
 import Home from "~/pages/Home";
 import Navbar from "~/components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Bestsellers from "~/pages/Bestsellers";
+import MaleBestSellers from "~/pages/GenderProducts/MaleBestSellers";
+import FemaleBestSellers from "~/pages/GenderProducts/FemaleBestSellers";
 import Error from "~/components/Error";
-import Allproducts from "~/pages/Allproducts";
+import Allproducts from "~/pages/GenderProducts/Allproducts";
 import Updates from "~/pages/Updates";
 import shoes from "~/db.js";
 import AboutUs from "~/pages/Footer/AboutUs";
@@ -23,11 +24,8 @@ import ShareDesign from "~/pages/Footer/ShareDesign";
 import AirforceOne from "./pages/Products/AirforceOne";
 import AirforceRainbow from "./pages/Products/AirforceRainbow";
 import AirforceCherry from "./pages/Products/AirforceCherry";
-import Daily from "./pages/Daily";
-
-
-
-
+import MaleDaily from "~/pages/Daily/MaleDaily";
+import FemaleDaily from "~/pages/Daily/FemaleDaily";
 
 export default function App() {
   return (
@@ -35,9 +33,17 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home shoes={shoes} />} />
-        <Route path="/bestsellers" element={<Bestsellers shoes={shoes} />} />
+        <Route
+          path="/malebestsellers"
+          element={<MaleBestSellers shoes={shoes} />}
+        />
+        <Route
+          path="/femalebestsellers"
+          element={<FemaleBestSellers shoes={shoes} />}
+        />
         <Route path="/allproducts" element={<Allproducts shoes={shoes} />} />
-        <Route path="/daily" element={<Daily shoes={shoes} />} />
+        <Route path="/maledaily" element={<MaleDaily shoes={shoes} />} />
+        <Route path="/femaledaily" element={<FemaleDaily shoes={shoes} />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/shoes-careers" element={<ShoesCareers />} />

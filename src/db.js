@@ -1,27 +1,5 @@
 const shoes = {
   products: {
-    bestsellers: {
-      shoe1: {
-        id: 1,
-        name: "AirForce",
-        image: "/Shoe(1).png",
-      },
-      shoe2: {
-        id: 2,
-        name: "AirForce",
-        image: "/Shoe(2).png",
-      },
-      shoe3: {
-        id: 3,
-        name: "AirForce",
-        image: "/Shoe(3).png",
-      },
-      shoe4: {
-        id: 4,
-        name: "AirForce",
-        image: "/Shoe(4).png",
-      },
-    },
     allproducts: {
       shoe1: {
         id: 1,
@@ -82,6 +60,60 @@ const shoes = {
         id: 12,
         name: "AirForce",
         image: "/Shoe(12).png",
+      },
+      shoe13: {
+        name: "AirForce",
+        image: "/Shoe(13).png",
+      },
+      shoe14: {
+        name: "AirForce",
+        image: "/Shoe(14).png",
+      },
+      shoe13: {
+        name: "AirForce",
+        image: "/Shoe(15).png",
+      },
+      shoe16: {
+        name: "AirForce",
+        image: "/Shoe(16).png",
+      },
+    },
+    bestsellers: {
+      men: {
+        shoe1: {
+          name: "AirForce",
+          image: "/Shoe(12).png",
+        },
+        shoe2: {
+          name: "AirForce",
+          image: "/Shoe(13).png",
+        },
+        shoe3: {
+          name: "AirForce",
+          image: "/Shoe(2).png",
+        },
+        shoe4: {
+          name: "AirForce",
+          image: "/Shoe(1).png",
+        },
+      },
+      women: {
+        shoe1: {
+          name: "AirForce",
+          image: "/Shoe(10).png",
+        },
+        shoe2: {
+          name: "AirForce",
+          image: "/Shoe(5).png",
+        },
+        shoe3: {
+          name: "AirForce",
+          image: "/Shoe(14).png",
+        },
+        shoe4: {
+          name: "AirForce",
+          image: "/Shoe(15).png",
+        },
       },
     },
   },
