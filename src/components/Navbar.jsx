@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import NewProducts from "./Navbar/NewProducts/NewProducts";
 import AllProuducts from "./Navbar/AllProducts/AllProducts";
 import { RxUpdate } from "react-icons/rx";
+import updateContentEighteen from '../updates.js'
 
 import {
   Dialog,
@@ -17,16 +18,8 @@ import {
   Transition,
 } from "@headlessui/react";
 
-export default function Navbar({}) {
+export default function Navbar({ }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [updates, setUpdates] = useState([
-    "Navigation Bar Düzenlemesi Yapıldı.",
-    "Updates Artık Pop'UP.",
-    "Database Ayarlaması Yapıldı.",
-    "Hızlandırma Yapıldı.",
-    "Transition Efekti Eklendi.",
-    "Dinamik yapı kuruldu.",
-  ]);
 
   return (
     <div className="w-full h-20 flex justify-start items-center gap-x-5 px-12 border-b">
@@ -83,7 +76,7 @@ export default function Navbar({}) {
         >
           <FaRegBell size={25} />
           <span className="absolute -top-2 text-xs bg-red-500 text-white w-5 h-5 flex justify-center items-center rounded-full right-0">
-            {updates.length}
+            {updateContentEighteen.length}
           </span>
         </button>
         <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
@@ -108,21 +101,24 @@ export default function Navbar({}) {
             className="relative z-50"
           >
             <div className="fixed inset-0 flex w-screen items-center pr-6 justify-end bg-black/20">
-              <DialogPanel className=" space-y-4 border bg-white h-[750px] rounded-lg shadow-xl p-4 relative ">
-                <DialogTitle className="font-bold text-2xl text-center">
+              <DialogPanel className=" space-y-4 border bg-white h-[750px] w-[400px] rounded-lg shadow-xl p-4 relative ">
+                <DialogTitle className="font-bold text-2xl text-center ">
                   <p className="flex justify-center items-center gap-x-5">
                     <RxUpdate />
                     Güncellemeler
+                    <span className="text-[14px] text-gray-400">v1.0</span>
                   </p>
                 </DialogTitle>
-                <hr />
+                <div className="w-full border h-10 bg-gray-200/50 flex justify-start px-4 items-center ">
+                  18.05.2024
+                </div>
                 <ol className="flex flex-col justify-start items-start gap-y-3 w-full p-2">
-                  {updates.map((content, index) => (
+                  {updateContentEighteen.map((content, index) => (
                     <li
                       key={index}
-                      className="font-medium text-xl border-b p-2 "
+                      className="font-medium text-md border-b p-2 "
                     >
-                      {index + 1} - {content}
+                      {index + 1} - {content.title}
                     </li>
                   ))}
                 </ol>
@@ -132,9 +128,7 @@ export default function Navbar({}) {
                 >
                   Kapat
                 </button>
-                <div className="w-full h-10 bg-gray-200/50 absolute bottom-0 right-0 flex justify-center items-center rounded-b-md border-t">
-                  18.05.2024
-                </div>
+
               </DialogPanel>
             </div>
           </Dialog>

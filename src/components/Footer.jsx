@@ -39,9 +39,9 @@ export default function Footer() {
         <div className="flex flex-col gap-y-5 mt-12">
           <Link to="/faq" className="text-lg hover:underline cursor-pointer text-[#121212]">Sıkça Sorulan Sorular</Link>
           <Link to="/personal-data" className="text-lg hover:underline cursor-pointer text-[#121212]">Kişisel Verilerin Korunması</Link>
-          <Link to="/terms-conditions" className="text-lg hover:underline cursor-pointer text-[#121212]">Gizlilik Politikası</Link>
-          <Link to="/cookie-policy" className="text-lg hover:underline cursor-pointer text-[#121212]">Kullanım Koşulları</Link>
-          <Link to="/privacy-policy" className="text-lg hover:underline cursor-pointer text-[#121212]">Çerez Politikası</Link>
+          <Link to="/privacy-policy" className="text-lg hover:underline cursor-pointer text-[#121212]">Gizlilik Politikası</Link>
+          <Link to="/terms-conditions" className="text-lg hover:underline cursor-pointer text-[#121212]">Kullanım Koşulları</Link>
+          <Link to="/cookie-policy" className="text-lg hover:underline cursor-pointer text-[#121212]">Çerez Politikası</Link>
         </div>
       </div>
       <div className=" w-[380px] p-7 ">
