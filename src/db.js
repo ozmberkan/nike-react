@@ -116,6 +116,44 @@ const shoes = {
         },
       },
     },
+    daily: {
+      men: {
+        shoe1: {
+          name: "AirForce",
+          image: "/Shoe(4).png",
+        },
+        shoe2: {
+          name: "AirForce",
+          image: "/Shoe(12).png",
+        },
+        shoe3: {
+          name: "AirForce",
+          image: "/Shoe(1).png",
+        },
+        shoe4: {
+          name: "AirForce",
+          image: "/Shoe(2).png",
+        },
+      },
+      women: {
+        shoe1: {
+          name: "AirForce",
+          image: "/Shoe(8).png",
+        },
+        shoe2: {
+          name: "AirForce",
+          image: "/Shoe(9).png",
+        },
+        shoe3: {
+          name: "AirForce",
+          image: "/Shoe(14).png",
+        },
+        shoe4: {
+          name: "AirForce",
+          image: "/Shoe(10).png",
+        },
+      },
+    },
   },
   banners: {
     id: 1,

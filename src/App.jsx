@@ -6,7 +6,6 @@ import MaleBestSellers from "~/pages/GenderProducts/MaleBestSellers";
 import FemaleBestSellers from "~/pages/GenderProducts/FemaleBestSellers";
 import Error from "~/components/Error";
 import Allproducts from "~/pages/GenderProducts/Allproducts";
-import Updates from "~/pages/Updates";
 import shoes from "~/db.js";
 import AboutUs from "~/pages/Footer/AboutUs";
 import Careers from "~/pages/Footer/Careers";
@@ -60,7 +59,6 @@ export default function App() {
         <Route path="/airforceone" element={<AirforceOne />} />
         <Route path="/airforcerainbow" element={<AirforceRainbow />} />
         <Route path="/airforcecherry" element={<AirforceCherry />} />
-        <Route path="/updates" element={<Updates />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
