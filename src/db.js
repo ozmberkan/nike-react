@@ -69,7 +69,7 @@ const shoes = {
         name: "AirForce",
         image: "/Shoe(14).png",
       },
-      shoe13: {
+      shoe15: {
         name: "AirForce",
         image: "/Shoe(15).png",
       },

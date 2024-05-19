@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import NewProducts from "./Navbar/NewProducts/NewProducts";
 import AllProuducts from "./Navbar/AllProducts/AllProducts";
 import { RxUpdate } from "react-icons/rx";
-import updateContentEighteen from '../updates.js'
+import updateContent from "../updates.js";
 
 import {
   Dialog,
@@ -18,7 +18,7 @@ import {
   Transition,
 } from "@headlessui/react";
 
-export default function Navbar({ }) {
+export default function Navbar({}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -76,7 +76,7 @@ export default function Navbar({ }) {
         >
           <FaRegBell size={25} />
           <span className="absolute -top-2 text-xs bg-red-500 text-white w-5 h-5 flex justify-center items-center rounded-full right-0">
-            {updateContentEighteen.length}
+            {updateContent.nineteen.length}
           </span>
         </button>
         <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
@@ -106,17 +106,17 @@ export default function Navbar({ }) {
                   <p className="flex justify-center items-center gap-x-5">
                     <RxUpdate />
                     Güncellemeler
-                    <span className="text-[14px] text-gray-400">v1.0</span>
+                    <span className="text-[14px] text-gray-400">v0.10</span>
                   </p>
                 </DialogTitle>
                 <div className="w-full border h-10 bg-gray-200/50 flex justify-start px-4 items-center ">
-                  18.05.2024
+                  19.05.2024
                 </div>
                 <ol className="flex flex-col justify-start items-start gap-y-3 w-full p-2">
-                  {updateContentEighteen.map((content, index) => (
+                  {updateContent.nineteen.map((content, index) => (
                     <li
                       key={index}
-                      className="font-medium text-md border-b p-2 "
+                      className="font-medium text-md border-b p-2"
                     >
                       {index + 1} - {content.title}
                     </li>
@@ -128,7 +128,6 @@ export default function Navbar({ }) {
                 >
                   Kapat
                 </button>
-
               </DialogPanel>
             </div>
           </Dialog>
