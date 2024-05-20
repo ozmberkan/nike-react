@@ -76,12 +76,15 @@ export default function Navbar({}) {
         >
           <FaRegBell size={25} />
           <span className="absolute -top-2 text-xs bg-red-500 text-white w-5 h-5 flex justify-center items-center rounded-full right-0">
-            {updateContent.nineteen.length}
+            {updateContent.twenty.length}
           </span>
         </button>
-        <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
+        <Link
+          to="/favorites"
+          className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full "
+        >
           <FaRegHeart size={25} />
-        </div>
+        </Link>
         <div className="p-2.5 hover:bg-zinc-200 cursor-pointer transition-colors duration-300 rounded-full ">
           <IoBasketOutline size={25} />
         </div>
@@ -106,14 +109,14 @@ export default function Navbar({}) {
                   <p className="flex justify-center items-center gap-x-5">
                     <RxUpdate />
                     Güncellemeler
-                    <span className="text-[14px] text-gray-400">v0.10</span>
+                    <span className="text-[14px] text-gray-400">v0.15</span>
                   </p>
                 </DialogTitle>
                 <div className="w-full border h-10 bg-gray-200/50 flex justify-start px-4 items-center ">
-                  19.05.2024
+                  20.05.2024 - HATALAR OLABİLİR.
                 </div>
                 <ol className="flex flex-col justify-start items-start gap-y-3 w-full p-2">
-                  {updateContent.nineteen.map((content, index) => (
+                  {updateContent.twenty.map((content, index) => (
                     <li
                       key={index}
                       className="font-medium text-md border-b p-2"

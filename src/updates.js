@@ -31,6 +31,26 @@ const updateContent = {
         "AirforceOne , AirforceCherry, AirforceRainbow Sayfaları Tamamlandı.",
     },
   ],
+  twenty: [
+    {
+      title: "Favoriler kısmı tamamlandı.",
+    },
+    {
+      title: "Database düzenlemesi yapıldı.",
+    },
+    {
+      title: "En çok satanlar Detail sayfası oluşturuldu.",
+    },
+    {
+      title: "Favoriler Detail sayfası oluşturuldu.",
+    },
+    {
+      title: "Erkek Detail sayfası oluşturuldu.",
+    },
+    {
+      title: "Kadın Detail sayfası oluşturuldu.",
+    },
+  ],
 };
 
 export default updateContent;

@@ -25,6 +25,13 @@ import AirforceRainbow from "./pages/Products/AirforceRainbow";
 import AirforceCherry from "./pages/Products/AirforceCherry";
 import MaleDaily from "~/pages/Daily/MaleDaily";
 import FemaleDaily from "~/pages/Daily/FemaleDaily";
+import Favorites from "./pages/Favorites";
+import Detail from "./pages/Details/Detail";
+import FavoritesDetail from "./pages/Details/FavoritesDetail";
+import MaleBestsellersDetail from "./pages/Details/MaleBestsellersDetail";
+import MaleDailyDetail from "./pages/Details/MaleDailyDetail";
+import FemaleBestsellersDetail from "./pages/Details/FemaleBestsellersDetail";
+import FemaleDailyDetail from "./pages/Details/FemaleDailyDetail";
 
 export default function App() {
   return (
@@ -59,6 +66,28 @@ export default function App() {
         <Route path="/airforceone" element={<AirforceOne />} />
         <Route path="/airforcerainbow" element={<AirforceRainbow />} />
         <Route path="/airforcecherry" element={<AirforceCherry />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/products/:id" element={<Detail shoes={shoes} />} />
+        <Route
+          path="/favorites/:id"
+          element={<FavoritesDetail shoes={shoes} />}
+        />
+        <Route
+          path="/malebestsellers/:id"
+          element={<MaleBestsellersDetail shoes={shoes} />}
+        />
+        <Route
+          path="/maledaily/:id"
+          element={<MaleDailyDetail shoes={shoes} />}
+        />
+        <Route
+          path="/femalebestsellers/:id"
+          element={<FemaleBestsellersDetail shoes={shoes} />}
+        />
+        <Route
+          path="/femaledaily/:id"
+          element={<FemaleDailyDetail shoes={shoes} />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

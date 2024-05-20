@@ -24,9 +24,6 @@ export default function AirforceRainbow() {
           repellat reprehenderit saepe accusamus minus? Perferendis,
           consequatur. Iure repellendus dolor beatae vel nemo.
         </p>
-        <button className="bg-gray-700 px-5 py-2 w-20 rounded-md text-white hover:bg-gray-500 transition-colors duration-500">
-          Detay
-        </button>
       </div>
     </div>
   );

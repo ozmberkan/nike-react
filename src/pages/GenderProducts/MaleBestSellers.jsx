@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "~/components/Footer";
 
 export default function Bestsellers({ shoes }) {
@@ -19,9 +20,12 @@ export default function Bestsellers({ shoes }) {
                   <h1 className="font-semibold text-lg ">
                     {shoes.products.bestsellers.men[key].name}
                   </h1>
-                  <button className="bg-gray-700 px-5 rounded-md text-white hover:bg-gray-500 transition-colors duration-500">
+                  <Link
+                    to={`/malebestsellers/${shoes.products.bestsellers.men[key].id}`}
+                    className="bg-gray-700 px-5 rounded-md text-white hover:bg-gray-500 transition-colors duration-500"
+                  >
                     Detay
-                  </button>
+                  </Link>
                 </div>
                 <div className=" w-full h-[250px] flex justify-center items-center">
                   <img src={shoes.products.bestsellers.men[key].image} alt="" />
