@@ -36,7 +36,10 @@ const updateContent = {
       title: "Favoriler kısmı tamamlandı.",
     },
     {
-      title: "Database düzenlemesi yapıldı.",
+      title: "Database düzenlemesi yapılı.",
+    },
+    {
+      title: "Database Fotoğraf Düzenlemesi Süreci Başladı.",
     },
     {
       title: "En çok satanlar Detail sayfası oluşturuldu.",

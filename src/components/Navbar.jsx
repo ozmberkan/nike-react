@@ -113,7 +113,7 @@ export default function Navbar({}) {
                   </p>
                 </DialogTitle>
                 <div className="w-full border h-10 bg-gray-200/50 flex justify-start px-4 items-center ">
-                  20.05.2024 - HATALAR OLABİLİR.
+                  20.05.2024
                 </div>
                 <ol className="flex flex-col justify-start items-start gap-y-3 w-full p-2">
                   {updateContent.twenty.map((content, index) => (
@@ -125,6 +125,7 @@ export default function Navbar({}) {
                     </li>
                   ))}
                 </ol>
+
                 <button
                   onClick={() => setIsOpen(false)}
                   className="w-full border-2 rounded-md flex justify-center items-center font-semibold p-2 border-black"
